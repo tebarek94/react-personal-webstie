@@ -1,0 +1,54 @@
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Dark background for the footer */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-link {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.footer-link:hover {
+  color: #ffcc00; /* Highlight links on hover */
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+    margin: 10px 5px;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}

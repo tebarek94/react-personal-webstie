@@ -1,0 +1,63 @@
+/* Main container for the Home component */
+.home-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Content section */
+.content {
+  text-align: center; /* Center the text */
+  max-width: 900px; /* Limit the width of the content */
+  padding: 20px;
+  background-color: white; /* White background for content */
+  border-radius: 8px; /* Rounded corners for the content box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Call to Action button styling */
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded button edges */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 20px; /* Add padding to the container */
+  }
+
+  .content {
+    padding: 15px; /* Adjust content padding */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Smaller font size for smaller screens */
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Slightly smaller button text */
+    padding: 12px 25px; /* Adjust button size */
+  }
+}

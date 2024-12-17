@@ -1,0 +1,60 @@
+/* Overall navbar styling */
+.navbar {
+  background-color: #333; /* Dark background color */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center; /* Center the links */
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the unordered list */
+.nav-links {
+  list-style-type: none; /* Remove default list styles */
+  display: flex; /* Align items horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for individual list items */
+.nav-item {
+  margin: 0 15px; /* Space between each link */
+}
+
+/* Styling for the links */
+.nav-link {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  color: #ffcc00; /* Change color to yellow */
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+}
+
+/* Active link styling (when the link is active) */
+.nav-link.active {
+  color: #ffcc00; /* Highlight active link */
+  font-weight: bold;
+  text-decoration: underline; /* Underline active link */
+}
+
+/* Responsive styling for small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Adjust spacing for vertical layout */
+  }
+}
